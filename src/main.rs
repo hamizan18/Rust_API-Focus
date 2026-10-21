@@ -1,9 +1,6 @@
 fn main() {
-    let nama = "mijaenn";
-    let mut skor = 0;
+    let umur = "25";
+    let umur:u32 = umur.parse().unwrap();
 
-    skor = skor + 15;
-
-    println!("{} mempunyai skor {}", nama, skor)
-
+    println!("Tahun depan: {}", umur +1);
 }
