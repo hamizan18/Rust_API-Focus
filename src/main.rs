@@ -1,10 +1,11 @@
 fn main() {
-    let a: i32 = -5;
-    let b: u8 = 255;
-    let pi: f64 = 3.14159;
-    let aktif: bool = true;
-    let huruf: char = 'R';
-
-    println!("{} {} {} {} {}", a, b, pi, aktif, huruf);
+    // Tuple: panjang tetap, tipe boleh berbeda
+    let titik: (i32, f64, char) = (10, 2.5, 'x');
+    let (x, y, z) = titik;
     
+    println!("{} {} {} | {}", x, y, z, titik.0);
+
+    // Array: panjang tetap, tipe sama
+    let nilai: [i32; 3] = [80, 90, 100];
+    println!("Pertama: {}, panjang: {}", nilai[0], nilai.len());
 }
